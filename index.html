@@ -34,7 +34,7 @@ button{font:inherit}
 header{position:sticky;top:0;z-index:1000;background:rgba(6,24,47,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 nav{min-height:78px;display:flex;align-items:center;gap:24px}
 .brand{display:flex;align-items:center;gap:11px;font-family:Georgia,serif;font-weight:700;color:white;white-space:nowrap}
-.brand img{width:50px;height:50px;border-radius:50%;object-fit:cover;border:1px solid rgba(239,202,114,.45);box-shadow:0 5px 18px rgba(0,0,0,.25)}
+.brand img{width:50px;height:50px;object-fit:cover;clip-path:circle(43.6% at 50% 50%);transform:scale(1.08);filter:drop-shadow(0 5px 10px rgba(0,0,0,.24))}
 .navlinks{display:flex;gap:18px;margin-left:auto;font-size:14px;font-weight:700;color:#dbe5f1}
 .navlinks a{position:relative;padding:27px 0 25px}
 .navlinks a:after{content:"";position:absolute;left:0;right:100%;bottom:17px;height:2px;background:var(--gold-2);transition:.2s}
@@ -53,7 +53,7 @@ nav{min-height:78px;display:flex;align-items:center;gap:24px}
 .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center;position:relative;z-index:1}
 .eyebrow{font-size:12px;letter-spacing:2.1px;text-transform:uppercase;color:var(--gold-2);font-weight:900;margin-bottom:12px}
 .hero h1,.section-title,h2,h3{font-family:Georgia,'Times New Roman',serif}
-.hero h1{font-size:clamp(44px,6.4vw,76px);line-height:1.01;margin:0 0 20px;color:white;max-width:840px}
+.hero h1{font-size:clamp(38px,4.7vw,60px);line-height:1.06;margin:0 0 20px;color:white;max-width:760px}
 .hero h1 span{color:var(--gold-2)}
 .hero p{font-size:19px;color:#cbd6e5;max-width:760px;margin:0 0 14px}
 .profile-line{font-weight:800;color:white!important;margin-top:23px!important;margin-bottom:4px!important}
@@ -64,11 +64,10 @@ nav{min-height:78px;display:flex;align-items:center;gap:24px}
 .btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:var(--navy);box-shadow:0 10px 28px rgba(201,152,61,.18)}
 .btn-outline{border-color:rgba(239,202,114,.48);color:white;background:rgba(255,255,255,.035)}
 .btn-outline:hover{background:rgba(255,255,255,.08)}
-.hero-visual{position:relative;min-height:470px;display:grid;place-items:center}
-.hero-logo{width:min(360px,76vw);border-radius:50%;box-shadow:0 28px 65px rgba(0,0,0,.45),0 0 0 1px rgba(239,202,114,.25);position:relative;z-index:2}
-.hero-halo{position:absolute;width:430px;height:430px;border-radius:50%;background:radial-gradient(circle,rgba(239,202,114,.18),rgba(239,202,114,.03) 48%,transparent 70%);filter:blur(2px)}
-.float-card{position:absolute;background:rgba(6,24,47,.88);border:1px solid var(--line);border-radius:16px;padding:15px 17px;box-shadow:var(--shadow);font-weight:700;color:white;max-width:220px;backdrop-filter:blur(9px)}
-.fc1{left:-4px;bottom:54px}.fc2{right:-4px;top:52px}
+.hero-visual{position:relative;min-height:430px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px}
+.hero-logo{width:min(330px,70vw);object-fit:cover;clip-path:circle(43.6% at 50% 50%);transform:scale(1.06);filter:drop-shadow(0 24px 42px rgba(0,0,0,.38));position:relative;z-index:2}
+.hero-halo{position:absolute;top:35px;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(239,202,114,.14),rgba(239,202,114,.025) 52%,transparent 72%);filter:blur(2px)}
+.hero-badges{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:min(430px,100%);position:relative;z-index:3}.float-card{position:static;background:rgba(6,24,47,.88);border:1px solid var(--line);border-radius:16px;padding:13px 15px;box-shadow:0 14px 34px rgba(0,0,0,.22);font-weight:700;color:white;max-width:none;backdrop-filter:blur(9px)}
 .float-card small{display:block;color:var(--gold-2);font-weight:900;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
 
 .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#081d38}
@@ -104,7 +103,7 @@ nav{min-height:78px;display:flex;align-items:center;gap:24px}
 .guide-preview img{width:100%;height:100%;object-fit:cover;object-position:top}
 .guide-copy .eyebrow{color:var(--gold-2)}.guide-copy h3{font-size:44px;line-height:1.04;margin:0 0 15px}.guide-copy p{color:#cfdae8;font-size:17px}.guide-points{display:grid;gap:10px;margin:21px 0}.guide-point{padding:12px 14px;border:1px solid rgba(232,196,108,.23);border-radius:13px;background:rgba(255,255,255,.05);color:#eef4fa}.guide-actions{display:flex;gap:11px;flex-wrap:wrap}.btn-light{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:var(--navy)}.btn-ghost{border-color:rgba(255,255,255,.25);color:white;background:rgba(255,255,255,.03)}
 
-.civil-detail{background:#071a32}.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.mini-card{background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.035));border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.2s}.mini-card:hover{transform:translateY(-4px);border-color:rgba(239,202,114,.55)}.mini-card img{height:190px;width:100%;object-fit:cover;object-position:top}.mini-card div{padding:16px}.mini-card strong{font-family:Georgia,serif;font-size:21px;color:white}.mini-card p{font-size:13px;color:var(--muted);margin:7px 0 0}
+.civil-detail{background:#071a32}.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.mini-card{background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.035));border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.2s;cursor:pointer;position:relative}.mini-card:hover,.mini-card:focus{transform:translateY(-4px);border-color:rgba(239,202,114,.55);outline:none;box-shadow:0 14px 34px rgba(0,0,0,.22)}.mini-card:focus-visible{box-shadow:0 0 0 3px rgba(239,202,114,.32),0 14px 34px rgba(0,0,0,.22)}.mini-card img{height:190px;width:100%;object-fit:cover;object-position:center}.mini-card div{padding:16px}.mini-card strong{font-family:Georgia,serif;font-size:21px;color:white}.mini-card p{font-size:13px;color:var(--muted);margin:7px 0 0}.mini-card:after{content:'Ver alcance →';display:block;padding:0 16px 17px;color:var(--gold-2);font-size:13px;font-weight:900}
 
 .situations{background:linear-gradient(180deg,#0a2444,#071a32)}
 .situation-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
@@ -125,9 +124,10 @@ footer{padding:36px 0 92px;background:#031020;color:#aebcd0;font-size:13px;borde
 .wa{position:fixed;right:22px;bottom:22px;width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:white;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.35);z-index:1200;border:3px solid rgba(255,255,255,.8)}
 
 .modal{position:fixed;inset:0;background:rgba(2,10,22,.94);z-index:2000;display:none;align-items:center;justify-content:center;padding:24px}.modal.show{display:flex}.modal-box{width:min(980px,100%);height:min(92vh,920px);display:grid;grid-template-columns:1fr 260px;background:#07182f;border:1px solid rgba(239,202,114,.25);border-radius:20px;overflow:hidden;box-shadow:0 32px 85px rgba(0,0,0,.55)}.modal-media{background:#020b16;display:flex;align-items:center;justify-content:center;min-height:0}.modal-media img{max-height:100%;max-width:100%;object-fit:contain}.modal-side{padding:25px;background:#0b2748;color:white;border-left:1px solid rgba(255,255,255,.08)}.modal-side h3{font-size:30px;margin:10px 0}.modal-side p{color:#c8d3e2;font-size:14px}.modal-count{font-size:12px;color:var(--gold-2);font-weight:900;text-transform:uppercase;letter-spacing:1px}.modal-controls{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:20px}.modal-controls button{border:1px solid rgba(239,202,114,.35);background:rgba(255,255,255,.05);color:white;border-radius:10px;padding:12px;cursor:pointer;font-weight:800}.modal-controls button:hover{background:rgba(255,255,255,.10)}.close-btn{position:absolute;right:22px;top:18px;background:rgba(255,255,255,.12);color:white;border:1px solid rgba(255,255,255,.15);width:42px;height:42px;border-radius:50%;font-size:25px;cursor:pointer;z-index:3}
+.service-modal-box{width:min(760px,100%);max-height:90vh;overflow:auto;background:linear-gradient(180deg,#0a2545,#06182f);border:1px solid rgba(239,202,114,.32);border-radius:22px;padding:30px;box-shadow:0 32px 85px rgba(0,0,0,.55);position:relative}.service-modal-box h3{font-size:34px;margin:6px 0 12px}.service-modal-box p{color:#d0dbea}.service-modal-list{display:grid;gap:9px;margin:18px 0 24px;padding:0;list-style:none}.service-modal-list li{padding:11px 13px;border:1px solid rgba(239,202,114,.22);border-radius:12px;background:rgba(255,255,255,.045);color:#eef4fa}.service-modal-note{font-size:12px;color:#aebed1;margin-top:16px}
 
-@media(max-width:980px){.navlinks,.nav-cta{display:none}.menu-btn{display:block}.mobile-menu:not([hidden]){display:grid}.hero-grid,.guide-stage,.contact-grid,.faq-wrap{grid-template-columns:1fr}.service-grid,.situation-grid{grid-template-columns:repeat(2,1fr)}.mini-grid{grid-template-columns:repeat(2,1fr)}.process-grid{grid-template-columns:repeat(2,1fr)}.hero-visual{min-height:400px}.modal-box{grid-template-columns:1fr;height:94vh}.modal-side{display:none}}
-@media(max-width:640px){.section{padding:64px 0}.hero{padding-top:52px}.service-grid,.mini-grid,.process-grid,.trust-grid,.situation-grid{grid-template-columns:1fr}.trust-item{border-right:0;border-bottom:1px solid var(--line)}.hero p{font-size:17px}.fc2{right:0;top:30px}.fc1{left:0;bottom:30px}.float-card{max-width:160px;font-size:13px}.guide-stage{padding:18px}.guide-copy h3{font-size:34px}.service-img{height:220px}.mini-card img{height:220px}.contact h2{font-size:36px}.brand span{font-size:14px}.hero-logo{width:min(315px,78vw)}}
+@media(max-width:980px){.navlinks,.nav-cta{display:none}.menu-btn{display:block}.mobile-menu:not([hidden]){display:grid}.hero-grid,.guide-stage,.contact-grid,.faq-wrap{grid-template-columns:1fr}.service-grid,.situation-grid{grid-template-columns:repeat(2,1fr)}.mini-grid{grid-template-columns:repeat(2,1fr)}.process-grid{grid-template-columns:repeat(2,1fr)}.hero-visual{min-height:360px}.modal-box{grid-template-columns:1fr;height:94vh}.modal-side{display:none}}
+@media(max-width:640px){.section{padding:64px 0}.hero{padding-top:52px}.service-grid,.mini-grid,.process-grid,.trust-grid,.situation-grid{grid-template-columns:1fr}.trust-item{border-right:0;border-bottom:1px solid var(--line)}.hero p{font-size:17px}.hero-badges{grid-template-columns:1fr}.float-card{font-size:13px}.guide-stage{padding:18px}.guide-copy h3{font-size:34px}.service-img{height:220px}.mini-card img{height:220px}.contact h2{font-size:36px}.brand span{font-size:14px}.hero-logo{width:min(300px,74vw)}}
 </style>
 </head>
 <body>
@@ -135,11 +135,11 @@ footer{padding:36px 0 92px;background:#031020;color:#aebcd0;font-size:13px;borde
   <div class="container">
     <nav>
       <a class="brand" href="#inicio"><img src="assets/logo-ma.jpg" alt="Logo M&A Abogados Asociados"><span>M&A Abogados Asociados</span></a>
-      <div class="navlinks"><a href="#areas">Áreas</a><a href="#guias">Guías visuales</a><a href="#civil">Civil</a><a href="#situaciones">Situaciones</a><a href="#como-trabajamos">Cómo trabajamos</a><a href="#faq">Preguntas</a><a href="#contacto">Contacto</a></div>
+      <div class="navlinks"><a href="#areas">Áreas</a><a href="#guias">Guías visuales</a><a href="#situaciones">Situaciones</a><a href="#como-trabajamos">Cómo trabajamos</a><a href="#faq">Preguntas</a><a href="#contacto">Contacto</a></div>
       <a class="nav-cta" href="https://wa.me/573186933392?text=Hola%2C%20quisiera%20solicitar%20una%20evaluaci%C3%B3n%20jur%C3%ADdica." target="_blank" rel="noopener">Solicitar evaluación</a>
       <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('mobileMenu').toggleAttribute('hidden')">☰</button>
     </nav>
-    <div id="mobileMenu" class="mobile-menu" hidden><a href="#areas">Áreas de práctica</a><a href="#guias">Guías visuales</a><a href="#civil">Derecho Civil</a><a href="#situaciones">¿Cuál es tu situación?</a><a href="#como-trabajamos">Cómo trabajamos</a><a href="#faq">Preguntas frecuentes</a><a href="#contacto">Contacto</a></div>
+    <div id="mobileMenu" class="mobile-menu" hidden><a href="#areas">Áreas de práctica</a><a href="#guias">Guías visuales</a><a href="#situaciones">¿Cuál es tu situación?</a><a href="#como-trabajamos">Cómo trabajamos</a><a href="#faq">Preguntas frecuentes</a><a href="#contacto">Contacto</a></div>
   </div>
 </header>
 
@@ -160,8 +160,7 @@ footer{padding:36px 0 92px;background:#031020;color:#aebcd0;font-size:13px;borde
     <div class="hero-visual">
       <div class="hero-halo"></div>
       <img class="hero-logo" src="assets/logo-ma.jpg" alt="M&A Abogados Asociados">
-      <div class="float-card fc1"><small>Atención</small>Presencial en Pasto y virtual</div>
-      <div class="float-card fc2"><small>Enfoque</small>Análisis jurídico individual</div>
+      <div class="hero-badges"><div class="float-card"><small>Atención</small>Presencial en Pasto y virtual</div><div class="float-card"><small>Enfoque</small>Análisis jurídico individual</div></div>
     </div>
   </div>
 </section>
@@ -184,12 +183,12 @@ footer{padding:36px 0 92px;background:#031020;color:#aebcd0;font-size:13px;borde
       <p>Selecciona un área para conocer el alcance del servicio y acceder a contenido visual que explica los aspectos más relevantes de cada trámite o proceso.</p>
     </div>
     <div class="service-grid">
-      <article class="service-card"><div class="service-img"><img src="assets/civil.webp" alt="Procesos civiles"></div><div class="service-body"><span class="tag">Derecho Civil</span><h3>Procesos civiles</h3><p>Procesos declarativos, responsabilidad civil, contratos, compraventa, regulación inmobiliaria y protección patrimonial.</p><div class="service-links"><a class="text-link" href="#civil">Explorar servicios →</a></div></div></article>
-      <article class="service-card"><div class="service-img"><img src="assets/penal-1.webp" alt="Derecho penal"></div><div class="service-body"><span class="tag">Derecho Penal</span><h3>Defensa y representación</h3><p>Orientación ante capturas, audiencias, defensa técnica y acompañamiento a víctimas, según la naturaleza del caso.</p><div class="service-links"><button class="text-link" style="border:0;background:none;cursor:pointer;padding:0" onclick="openGuide('penal')">Ver guía visual →</button></div></div></article>
-      <article class="service-card"><div class="service-img"><img src="assets/ejecutivos-1.webp" alt="Procesos ejecutivos"></div><div class="service-body"><span class="tag">Procesos Ejecutivos</span><h3>Cobro y defensa</h3><p>Revisión del título ejecutivo, medidas cautelares, intereses, excepciones y estrategia para cobrar o defenderse.</p><div class="service-links"><button class="text-link" style="border:0;background:none;cursor:pointer;padding:0" onclick="openGuide('ejecutivos')">Ver guía visual →</button></div></div></article>
-      <article class="service-card"><div class="service-img"><img src="assets/sucesiones-1.webp" alt="Sucesiones"></div><div class="service-body"><span class="tag">Sucesiones</span><h3>Herencia y patrimonio</h3><p>Apertura, reconocimiento de herederos, inventarios, administración, protección de bienes y partición.</p><div class="service-links"><button class="text-link" style="border:0;background:none;cursor:pointer;padding:0" onclick="openGuide('sucesiones')">Ver guía visual →</button></div></div></article>
-      <article class="service-card"><div class="service-img"><img src="assets/insolvencia-1.webp" alt="Insolvencia"></div><div class="service-body"><span class="tag">Insolvencia</span><h3>Evaluación de endeudamiento</h3><p>Revisión de obligaciones, acreedores, mora, ingresos, bienes y procesos existentes para definir la ruta jurídica aplicable.</p><div class="service-links"><button class="text-link" style="border:0;background:none;cursor:pointer;padding:0" onclick="openGuide('insolvencia')">Ver guía visual →</button></div></div></article>
-      <article class="service-card"><div class="service-img"><img src="assets/negociacion-1.webp" alt="Negociación de deudas"></div><div class="service-body"><span class="tag">Negociación de deudas</span><h3>Acuerdos y reorganización</h3><p>Preparación de la solicitud, relación de acreedores, propuesta de pago y acompañamiento durante la negociación.</p><div class="service-links"><button class="text-link" style="border:0;background:none;cursor:pointer;padding:0" onclick="openGuide('negociacion')">Ver guía visual →</button></div></div></article>
+      <article class="service-card"><div class="service-img"><img src="assets/thumb-civil.webp" alt="Procesos civiles"></div><div class="service-body"><span class="tag">Derecho Civil</span><h3>Procesos civiles</h3><p>Procesos declarativos, responsabilidad civil, contratos, compraventa, regulación inmobiliaria y protección patrimonial.</p><div class="service-links"><a class="text-link" href="#civil">Explorar servicios →</a></div></div></article>
+      <article class="service-card"><div class="service-img"><img src="assets/thumb-penal.webp" alt="Derecho penal"></div><div class="service-body"><span class="tag">Derecho Penal</span><h3>Defensa y representación</h3><p>Orientación ante capturas, audiencias, defensa técnica y acompañamiento a víctimas, según la naturaleza del caso.</p><div class="service-links"><button class="text-link" style="border:0;background:none;cursor:pointer;padding:0" onclick="openGuide('penal')">Ver guía visual →</button></div></div></article>
+      <article class="service-card"><div class="service-img"><img src="assets/thumb-ejecutivos.webp" alt="Procesos ejecutivos"></div><div class="service-body"><span class="tag">Procesos Ejecutivos</span><h3>Cobro y defensa</h3><p>Revisión del título ejecutivo, medidas cautelares, intereses, excepciones y estrategia para cobrar o defenderse.</p><div class="service-links"><button class="text-link" style="border:0;background:none;cursor:pointer;padding:0" onclick="openGuide('ejecutivos')">Ver guía visual →</button></div></div></article>
+      <article class="service-card"><div class="service-img"><img src="assets/thumb-sucesiones.webp" alt="Sucesiones"></div><div class="service-body"><span class="tag">Sucesiones</span><h3>Herencia y patrimonio</h3><p>Apertura, reconocimiento de herederos, inventarios, administración, protección de bienes y partición.</p><div class="service-links"><button class="text-link" style="border:0;background:none;cursor:pointer;padding:0" onclick="openGuide('sucesiones')">Ver guía visual →</button></div></div></article>
+      <article class="service-card"><div class="service-img"><img src="assets/thumb-insolvencia.webp" alt="Insolvencia"></div><div class="service-body"><span class="tag">Insolvencia</span><h3>Evaluación de endeudamiento</h3><p>Revisión de obligaciones, acreedores, mora, ingresos, bienes y procesos existentes para definir la ruta jurídica aplicable.</p><div class="service-links"><button class="text-link" style="border:0;background:none;cursor:pointer;padding:0" onclick="openGuide('insolvencia')">Ver guía visual →</button></div></div></article>
+      <article class="service-card"><div class="service-img"><img src="assets/thumb-negociacion.webp" alt="Negociación de deudas"></div><div class="service-body"><span class="tag">Negociación de deudas</span><h3>Acuerdos y reorganización</h3><p>Preparación de la solicitud, relación de acreedores, propuesta de pago y acompañamiento durante la negociación.</p><div class="service-links"><button class="text-link" style="border:0;background:none;cursor:pointer;padding:0" onclick="openGuide('negociacion')">Ver guía visual →</button></div></div></article>
     </div>
   </div>
 </section>
@@ -225,12 +224,12 @@ footer{padding:36px 0 92px;background:#031020;color:#aebcd0;font-size:13px;borde
       <p>El derecho civil no es solo litigio. Una revisión jurídica oportuna también puede prevenir conflictos, proteger patrimonio y dar seguridad a negocios y actuaciones sobre inmuebles.</p>
     </div>
     <div class="mini-grid">
-      <div class="mini-card"><img src="assets/responsabilidad.webp" alt="Responsabilidad civil"><div><strong>Responsabilidad civil</strong><p>Reclamación o defensa frente a daños contractuales o extracontractuales.</p></div></div>
-      <div class="mini-card"><img src="assets/contratos.webp" alt="Contratos"><div><strong>Contratos</strong><p>Redacción, revisión, garantías, incumplimiento y formalización.</p></div></div>
-      <div class="mini-card"><img src="assets/escrituras.webp" alt="Escrituras de venta"><div><strong>Compraventa y escrituras</strong><p>Revisión jurídica del inmueble, promesa, escritura y registro.</p></div></div>
-      <div class="mini-card"><img src="assets/subdivision.webp" alt="Licencias de subdivisión"><div><strong>Licencias de subdivisión</strong><p>Revisión jurídica y acompañamiento en trámites de división predial.</p></div></div>
-      <div class="mini-card"><img src="assets/propiedad-horizontal.webp" alt="Propiedad horizontal"><div><strong>Propiedad horizontal</strong><p>Orientación en estructuración y formalización jurídica del régimen.</p></div></div>
-      <div class="mini-card"><img src="assets/correccion-area.webp" alt="Corrección de área"><div><strong>Corrección de área</strong><p>Revisión documental y acompañamiento en ajustes de cabida o linderos, según el caso.</p></div></div>
+      <article class="mini-card civil-service" data-service="responsabilidad" tabindex="0" role="button" aria-label="Ver alcance del servicio de responsabilidad civil"><img src="assets/responsabilidad.webp" alt="Responsabilidad civil"><div><strong>Responsabilidad civil</strong><p>Reclamación o defensa frente a daños contractuales o extracontractuales.</p></div></article>
+      <article class="mini-card civil-service" data-service="contratos" tabindex="0" role="button" aria-label="Ver alcance del servicio de contratos"><img src="assets/contratos.webp" alt="Contratos"><div><strong>Contratos</strong><p>Redacción, revisión, garantías, incumplimiento y formalización.</p></div></article>
+      <article class="mini-card civil-service" data-service="compraventa" tabindex="0" role="button" aria-label="Ver alcance del servicio de compraventa y escrituras"><img src="assets/escrituras.webp" alt="Escrituras de venta"><div><strong>Compraventa y escrituras</strong><p>Revisión jurídica del inmueble, promesa, escritura y registro.</p></div></article>
+      <article class="mini-card civil-service" data-service="subdivision" tabindex="0" role="button" aria-label="Ver alcance del servicio de licencias de subdivisión"><img src="assets/subdivision.webp" alt="Licencias de subdivisión"><div><strong>Licencias de subdivisión</strong><p>Revisión jurídica y acompañamiento en trámites de división predial.</p></div></article>
+      <article class="mini-card civil-service" data-service="ph" tabindex="0" role="button" aria-label="Ver alcance del servicio de propiedad horizontal"><img src="assets/propiedad-horizontal.webp" alt="Propiedad horizontal"><div><strong>Propiedad horizontal</strong><p>Orientación en estructuración y formalización jurídica del régimen.</p></div></article>
+      <article class="mini-card civil-service" data-service="area" tabindex="0" role="button" aria-label="Ver alcance del servicio de corrección de área"><img src="assets/correccion-area.webp" alt="Corrección de área"><div><strong>Corrección de área</strong><p>Revisión documental y acompañamiento en ajustes de cabida o linderos, según el caso.</p></div></article>
     </div>
   </div>
 </section>
@@ -298,9 +297,41 @@ footer{padding:36px 0 92px;background:#031020;color:#aebcd0;font-size:13px;borde
 <footer><div class="container footer-grid"><div><strong>M&A Abogados Asociados</strong><br>Derecho Civil · Derecho Penal · Insolvencia · Litigios<br><br>La información de este sitio es general y no sustituye el análisis jurídico individual. Cada asunto depende de sus hechos, documentos y circunstancias.</div><div>Abogada Mónica Alejandra Legarda López<br>T.P. 303681<br>Atención presencial y virtual</div></div></footer>
 <a class="wa" href="https://wa.me/573186933392?text=Hola%2C%20conoc%C3%AD%20M%26A%20Abogados%20Asociados%20por%20su%20p%C3%A1gina%20web." target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
 
+<div class="modal" id="serviceModal" role="dialog" aria-modal="true" aria-labelledby="serviceModalTitle">
+  <div class="service-modal-box">
+    <button class="close-btn" id="closeServiceModal" aria-label="Cerrar">×</button>
+    <div class="eyebrow">Servicios civiles y patrimoniales</div>
+    <h3 id="serviceModalTitle"></h3>
+    <p id="serviceModalDefinition"></p>
+    <ul class="service-modal-list" id="serviceModalList"></ul>
+    <a class="btn btn-primary" id="serviceModalWA" href="#" target="_blank" rel="noopener">Consultar este servicio por WhatsApp</a>
+    <div class="service-modal-note">La información es orientativa. El alcance concreto depende de los documentos, antecedentes y objetivos de cada caso.</div>
+  </div>
+</div>
+
 <div class="modal" id="guideModal" role="dialog" aria-modal="true" aria-label="Guía jurídica visual"><button class="close-btn" onclick="closeGuide()" aria-label="Cerrar">×</button><div class="modal-box"><div class="modal-media"><img id="modalImg" alt="Guía jurídica visual"></div><div class="modal-side"><div class="modal-count" id="modalCount"></div><h3 id="modalTitle"></h3><p>Usa los botones para recorrer la guía. También puedes usar las flechas del teclado.</p><div class="modal-controls"><button onclick="prevSlide()">← Anterior</button><button onclick="nextSlide()">Siguiente →</button></div></div></div></div>
 
 <script>
+const civilServices={
+  responsabilidad:{title:'Responsabilidad civil contractual y extracontractual',definition:'Asesoría y representación para analizar, reclamar o controvertir daños y perjuicios derivados del incumplimiento de un contrato o de un hecho que cause un daño.',items:['Estudio de hechos, pruebas, daño y relación causal.','Cuantificación y soporte de perjuicios, cuando corresponda.','Reclamaciones, conciliaciones, demandas o defensa frente a pretensiones.','Revisión de seguros, contratos y documentos relacionados con el caso.'],wa:'Hola, quisiera consultar sobre un asunto de responsabilidad civil.'},
+  contratos:{title:'Contratos',definition:'Acompañamiento jurídico para prevenir conflictos y dar claridad a las obligaciones, riesgos, garantías y consecuencias de un negocio o acuerdo.',items:['Redacción, revisión y ajuste de contratos.','Cláusulas de pago, plazo, garantías, incumplimiento y terminación.','Revisión de documentos antes de firmar.','Acompañamiento en negociación, formalización y manejo de incumplimientos.'],wa:'Hola, quisiera consultar sobre la redacción o revisión de un contrato.'},
+  compraventa:{title:'Compraventa y escrituras',definition:'Revisión jurídica de operaciones de compraventa de inmuebles para identificar riesgos documentales y acompañar la formalización del negocio.',items:['Revisión de certificados, títulos, gravámenes y antecedentes documentales.','Revisión o elaboración de promesas de compraventa.','Acompañamiento en la preparación y revisión de la escritura pública.','Orientación sobre registro y actuaciones posteriores al otorgamiento.'],wa:'Hola, quisiera consultar sobre una compraventa o escritura de inmueble.'},
+  subdivision:{title:'Licencias de subdivisión',definition:'Acompañamiento jurídico en la revisión de viabilidad y documentación necesaria para trámites de división predial, en coordinación con los componentes técnicos que correspondan.',items:['Revisión de títulos, antecedentes y situación jurídica del predio.','Verificación jurídica de requisitos y documentos del trámite.','Coordinación con profesionales técnicos cuando el caso lo exige.','Acompañamiento ante la autoridad competente y seguimiento del expediente.'],wa:'Hola, quisiera consultar sobre una licencia de subdivisión.'},
+  ph:{title:'Propiedad horizontal',definition:'Orientación jurídica para estructurar, formalizar o revisar actuaciones relacionadas con inmuebles sometidos o que se proyectan someter al régimen de propiedad horizontal.',items:['Revisión de títulos y documentos del inmueble.','Apoyo en reglamentos, coeficientes y documentos jurídicos, según el caso.','Coordinación con componentes técnicos y urbanísticos necesarios.','Acompañamiento en formalización, escrituras, registro y actuaciones relacionadas.'],wa:'Hola, quisiera consultar sobre propiedad horizontal.'},
+  area:{title:'Corrección de área, cabida o linderos',definition:'Estudio jurídico de diferencias entre la realidad física, la información catastral y los títulos o registros del predio, para identificar la ruta de corrección que corresponda.',items:['Revisión de escrituras, folio de matrícula y documentos catastrales.','Identificación de inconsistencias de área, cabida o linderos.','Coordinación con levantamientos o soportes técnicos cuando sean necesarios.','Acompañamiento en la actuación administrativa, notarial o registral aplicable al caso.'],wa:'Hola, quisiera consultar sobre corrección de área, cabida o linderos de un predio.'}
+};
+function openCivilService(key){
+  const s=civilServices[key]; if(!s) return;
+  document.getElementById('serviceModalTitle').textContent=s.title;
+  document.getElementById('serviceModalDefinition').textContent=s.definition;
+  document.getElementById('serviceModalList').innerHTML=s.items.map(x=>`<li>${x}</li>`).join('');
+  document.getElementById('serviceModalWA').href=`https://wa.me/573186933392?text=${encodeURIComponent(s.wa)}`;
+  document.getElementById('serviceModal').classList.add('show'); document.body.style.overflow='hidden';
+}
+function closeCivilService(){document.getElementById('serviceModal').classList.remove('show');document.body.style.overflow=''}
+document.querySelectorAll('.civil-service').forEach(card=>{card.addEventListener('click',()=>openCivilService(card.dataset.service));card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openCivilService(card.dataset.service)}})});
+document.getElementById('closeServiceModal').addEventListener('click',closeCivilService);
+document.getElementById('serviceModal').addEventListener('click',e=>{if(e.target.id==='serviceModal')closeCivilService()});
 const guides={
   sucesiones:{title:'Sucesiones',count:8,stageTitle:'Lo que debes revisar desde el inicio',text:'Herederos, bienes, acreedores y derechos del cónyuge o compañero permanente pueden influir en la ruta del trámite.',points:['Apertura y legitimación','Protección de bienes','Administración y partición'],wa:'Hola, quisiera consultar sobre una sucesión.'},
   ejecutivos:{title:'Procesos ejecutivos',count:8,stageTitle:'Cobrar o defenderse requiere estrategia',text:'El título ejecutivo, los términos, intereses, medidas cautelares y excepciones pueden cambiar la posición jurídica de las partes.',points:['Revisión del título','Embargos y medidas cautelares','Defensa del ejecutado'],wa:'Hola, quisiera consultar sobre un proceso ejecutivo.'},
@@ -328,7 +359,7 @@ function closeGuide(){document.getElementById('guideModal').classList.remove('sh
 function renderModal(){const g=guides[currentGuide];document.getElementById('modalImg').src=`assets/${currentGuide}-${currentSlide}.webp`;document.getElementById('modalCount').textContent=`${currentSlide} / ${g.count}`;document.getElementById('modalTitle').textContent=g.title}
 function nextSlide(){const g=guides[currentGuide];currentSlide=currentSlide>=g.count?1:currentSlide+1;renderModal()}
 function prevSlide(){const g=guides[currentGuide];currentSlide=currentSlide<=1?g.count:currentSlide-1;renderModal()}
-document.addEventListener('keydown',e=>{if(!document.getElementById('guideModal').classList.contains('show'))return;if(e.key==='Escape')closeGuide();if(e.key==='ArrowRight')nextSlide();if(e.key==='ArrowLeft')prevSlide()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&document.getElementById('serviceModal').classList.contains('show'))closeCivilService();if(!document.getElementById('guideModal').classList.contains('show'))return;if(e.key==='Escape')closeGuide();if(e.key==='ArrowRight')nextSlide();if(e.key==='ArrowLeft')prevSlide()});
 document.getElementById('guideModal').addEventListener('click',e=>{if(e.target.id==='guideModal')closeGuide()});
 </script>
 </body>
