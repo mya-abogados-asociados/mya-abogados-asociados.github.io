@@ -379,7 +379,17 @@ const civilServices={
   ],
   wa:'Hola, quisiera recibir asesoría sobre constitución, modificación o formalización de una propiedad horizontal.'
 },
-  area:{title:'Corrección de área, cabida o linderos',definition:'Estudio jurídico de diferencias entre la realidad física, la información catastral y los títulos o registros del predio, para identificar la ruta de corrección que corresponda.',items:['Revisión de escrituras, folio de matrícula y documentos catastrales.','Identificación de inconsistencias de área, cabida o linderos.','Coordinación con levantamientos o soportes técnicos cuando sean necesarios.','Acompañamiento en la actuación administrativa, notarial o registral aplicable al caso.'],wa:'Hola, quisiera consultar sobre corrección de área, cabida o linderos de un predio.'}
+  area:{
+  title:'Corrección de área, cabida o linderos',
+  definition:'Acompañamiento jurídico y técnico para corregir diferencias entre la realidad física del inmueble, los títulos, el registro y la información catastral, coordinando las actuaciones necesarias para armonizar la información del predio.',
+  items:[
+    '<strong>Estudio jurídico y registral del inmueble.</strong><br>Revisamos escrituras, certificado de tradición, información catastral, áreas y linderos para determinar la actuación procedente y establecer las inconsistencias que deben ser corregidas.',
+    '<strong>Levantamiento topográfico y elaboración de planos.</strong><br>Coordinamos la medición, georreferenciación y preparación de planos y soportes técnicos por topógrafo integrante del equipo de trabajo de la firma.',
+    '<strong>Trámite ante el IGAC o gestor catastral competente.</strong><br>Acompañamos la radicación de la solicitud, presentación de soportes jurídicos y técnicos, atención de requerimientos y seguimiento del procedimiento.',
+    '<strong>Actualización catastral, notarial y registral.</strong><br>Acompañamos las actuaciones necesarias para armonizar la información física, catastral y registral del inmueble una vez obtenida la corrección correspondiente.'
+  ],
+  wa:'Hola, quisiera recibir asesoría sobre corrección de área, cabida o linderos de un inmueble.'
+}
 };
 function openCivilService(key){
   const s=civilServices[key]; if(!s) return;
